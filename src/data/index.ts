@@ -81,6 +81,70 @@ export const products = [
 export const links = [
   {
     name: "Platform",
-    links: ["Pricing", "Sign pu free", "Community", "Website builder"],
+    links: [
+      "Pricing",
+      "Sign up free",
+      "Community",
+      "Website builder",
+      "Digital products",
+      "Email marketing",
+    ],
+  },
+  {
+    name: "Support",
+    links: [
+      "Contact us",
+      "Help center",
+      "Hire a Lotia pro",
+      "Creator community",
+      "Lotia 101",
+    ],
+  },
+  {
+    name: "Features",
+    links: [
+      "Online courses",
+      "Downloads",
+      "Webinars",
+      "Coaching",
+      "All features",
+    ],
+  },
+  {
+    name: "Compare",
+    links: [
+      "Kajabi",
+      "Teachable",
+      "Thinkific",
+      "Patreon",
+      "Gumroad",
+      "Lotia Alternatives",
+    ],
+  },
+  {
+    name: "Resources",
+    links: [
+      "Examples",
+      "Demo",
+      "Creator stories",
+      "Blog",
+      "Free tools",
+      "All resources",
+    ],
+  },
+  {
+    name: "Lotia",
+    links: [
+      "Jobs",
+      "About",
+      "Branding",
+      "Reviews",
+      "Refer-a-creator",
+      "Affliates",
+    ],
+  },
+  {
+    name: "Social",
+    links: ["Twitter", "Facebook", "Instagram", "YouTube"],
   },
 ];

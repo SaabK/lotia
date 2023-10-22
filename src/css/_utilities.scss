@@ -1,0 +1,65 @@
+.container {
+  width: 82.5%;
+  margin-inline: auto;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: black;
+  padding: 0.79em 1.55em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: $transition;
+  width: fit-content;
+}
+
+.btn-primary {
+  background: $darkPurple;
+  color: white;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #301976;
+  }
+}
+
+.btn-secondary {
+  &:hover {
+    background: $lightRed;
+  }
+}
+
+.btn-cta {
+  padding: 0;
+  margin-block: 0.5rem;
+  font-size: 1.1rem;
+  color: $darkPurple;
+  font-weight: 600;
+
+  span {
+    margin-left: 0.4rem;
+    transition: $transition;
+  }
+
+  &:hover {
+    span {
+      margin-left: 0.65rem;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-less {
+  width: 84%;
+  margin-inline: auto;
+}

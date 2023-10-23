@@ -12,3 +12,7 @@ The following technologies were used:
 
 - ReactJS
 - SASS
+
+## Screenshot
+
+![Lotia Website](/public/Lotia%20Website%20by%20FrontendPractice%20full%20page%20screenshot.png)

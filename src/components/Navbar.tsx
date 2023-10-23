@@ -35,6 +35,11 @@ function Navbar() {
           <button className="btn btn-secondary">Login</button>
           <button className="btn btn-primary">Sign up free</button>
         </div>
+
+        <button className="btn btn-secondary" id="menu">
+          Menu
+          <img src={dropdown} alt="" className="dropdown" />
+        </button>
       </div>
     </header>
   );

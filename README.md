@@ -1,3 +1,14 @@
 # Lotia - A project by Frontend Practice
 
-Send your courses, coaching sessions on lotia.
+Sell your courses, coaching sessions on lotia.
+
+## Challenge
+
+This was a challenge by FrontendPractice.com
+
+## Technologies
+
+The following technologies were used:
+
+- ReactJS
+- SASS

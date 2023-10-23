@@ -37,7 +37,7 @@
 }
 
 .btn-cta {
-  padding: 0;
+  padding: 0 !important;
   margin-block: 0.5rem;
   font-size: 1.1rem;
   color: $darkPurple;
@@ -62,4 +62,26 @@
 .w-less {
   width: 84%;
   margin-inline: auto;
+}
+
+.none {
+  display: flex !important;
+}
+
+.inverted {
+  transform: scaleY(-100%);
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+  .w-less {
+    width: 98%;
+  }
+
+  .btn {
+    padding: 0.6em 1.25em;
+  }
+
+  .none {
+    display: none !important;
+  }
 }

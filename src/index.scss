@@ -103,11 +103,11 @@ header {
     &:hover {
       background: $lightRed;
     }
-
-    .dropdown {
-      width: 10px;
-    }
   }
+}
+
+.dropdown {
+  width: 10px;
 }
 
 .registeration {
@@ -115,6 +115,12 @@ header {
   gap: 0.5rem;
   justify-self: end;
   margin-left: auto;
+}
+
+#menu {
+  display: none;
+  gap: 0.5em;
+  align-items: center;
 }
 
 // Hero Section
@@ -269,6 +275,10 @@ footer {
     .title {
       font-weight: 600;
       margin-right: $link-gap;
+
+      .dropdown {
+        display: none;
+      }
     }
   }
 
@@ -293,5 +303,164 @@ footer {
 
   & > * {
     margin-right: 0.5rem;
+  }
+}
+
+// For Mobile Phones
+
+@media (min-width: 0) and (max-width: 600px) {
+  // Utilities
+
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+    top: 0.3rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .container {
+    max-width: 500px;
+    width: 90%;
+  }
+
+  // Navbar
+
+  header {
+    & > .container {
+      padding-block: 1rem;
+    }
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .registeration {
+    .btn-primary {
+      display: none;
+    }
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  // Hero section
+
+  #hero {
+    padding-block: $section-padding-mobile;
+    .container {
+      grid-template-columns: 1fr;
+
+      .text-content {
+        order: 2;
+      }
+    }
+  }
+
+  // Features
+
+  #features {
+    padding-block: $section-padding-mobile;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  // Products
+
+  #products {
+    padding-block: $section-padding-mobile;
+  }
+
+  .products {
+    gap: 1rem;
+  }
+
+  .product-info {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .text-content {
+      order: 2;
+      gap: 0.6rem;
+    }
+  }
+
+  .review {
+    width: 92%;
+  }
+
+  // CTA
+
+  #cta {
+    padding: 2.39em;
+    gap: 1.5rem;
+    margin-block: $section-padding-mobile;
+  }
+
+  // footer
+
+  footer {
+    padding-block: $section-padding-mobile * 1.25;
+  }
+
+  .link-type {
+    & > li {
+      margin-bottom: 1rem;
+      flex-direction: column;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 0 !important;
+      width: 100%;
+      cursor: pointer;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.25rem;
+
+      &.active {
+        color: $darkPurple;
+      }
+
+      .dropdown {
+        width: 12px;
+      }
+    }
+
+    .links {
+      flex-direction: column;
+      margin-block: 0.65rem;
+
+      .link {
+        width: fit-content;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.875rem;
   }
 }

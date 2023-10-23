@@ -1,14 +1,27 @@
 import { links } from "../data";
+import dropdown from "../assets/dropdown.png";
+import { useState } from "react";
 
 function Footer() {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <footer>
       <div className="container">
         <ul role="list" className="link-type">
           {links.map((link, index) => (
-            <li key={index}>
-              <span className="title">{link.name}</span>
-              <ul className="links">
+            <li key={index} onClick={() => setActiveTab(index)}>
+              <span className={`title ${activeTab === index ? "active" : ""}`}>
+                {link.name}
+                <img
+                  src={dropdown}
+                  alt=""
+                  className={`dropdown ${
+                    activeTab === index ? "inverted" : ""
+                  }`}
+                />
+              </span>
+              <ul className={`links ${activeTab === index ? "" : "none"}`}>
                 {link.links.map((link, index) => (
                   <li key={index} className="link">
                     {link}

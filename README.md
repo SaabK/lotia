@@ -16,3 +16,7 @@ The following technologies were used:
 ## Screenshot
 
 ![Lotia Website](/public/Lotia%20Website%20by%20FrontendPractice%20full%20page%20screenshot.png)
+
+## Live Website
+
+The live verison of the website can be found [here](https://quiet-pixie-dc28fc.netlify.app/)
